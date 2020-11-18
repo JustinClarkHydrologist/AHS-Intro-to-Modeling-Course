@@ -1,0 +1,70 @@
+SUMMARY OF RUNNING COMMAND LINE PROGRAMS IN WINDOWS:
+
+MODFLOW can be run by double clicking the .exe if the .exe file is saved in the folder that you are running MODFLOW (i.e., the same folder as the required input files) then typing the name of the MODFLOW name file and pressing enter. Very few invoke MODFLOW in this way. 
+
+Most modelers use a Command Line input or a Graphical User Inferface (GUI) to run MODFLOW. Running MODFLOW from the Command Line is free and allows the user to see the progress of the model as it is running. Using command line scripts (batch files) are also very useful for running MODFLOW. Batch file scripts (.bat files) serve as a digital record of the MODFLOW simulations (i.e., the specific input files used, the various packages used,etc.) and offer a simple way to rerun MODFLOW (if need be).
+
+Setup:
+Open a new Explorer window (folder). Navigate to the root folder on your drive and create a folder called Mdl. Then open that folder and make a subfolder called "Example1". Open the Example1 folder.
+
+1. There are many ways to open a DOS CMD window (or DOS box, used interchangeably). Here are three:
+     >Side Note 1: DOS is not case sensititive so matching capitalization does not matter
+     A. Open a windows folder. Left click in the address bar (run line) located below the title bar. Type "cmd" and press enter. A Windows DOS Command Line window (DOS box) pops up with the current folder as the active directory.
+     B. Hold shift and right click in the blank space of the current folder. Choose "Open PowerShell window here" from the dropdown menu. Type "start cmd" and press enter. A Windows DOS Command Line window pops up with the current folder as the active directory.
+     C. Click on Windows search icon (or the 'run' menu icon). Type "cmd" and press enter. When opening the DOS Command Line (DOS box) using this method the active directory is the root folder for the user (e.g., "C:\Users\myprofile")
+
+
+
+2. Basic navigation within a Command Line Window using only the keyboard.
+     >Side Note 2: CD = change directory
+     A. Being able to move amongst various folders, and to manipulate files, on your hard drive in windows is necessary in  order to run MODFLOW and other DOS based programs. To change from the active directory to the root directory of your current drive type "cd\" (no quotes) on the command line in the DOS box and press enter.  If you want to move into a folder that is in the current directory type "cd" followed by a space and the folder name and press enter (it is assumed that you will press enter after any command that you wish to envoke). If you want to move to a folder that is directly above the current folder in the path (move up one folder) type "cd ..\" into the DOS window.
+     B. If you are in the root folder of your drive, to move into the folder that you created type "cd Mdl\Example1" then press enter.
+     C. To navigate to any folder in the current drive type the entire path after "cd". To test this type "cd C:\Mdl" and press enter then type "cd C:\Mdl\Example1" to get back to the example folder.
+     
+
+3. Make and delete a folder.
+     A. To make a folder, on the command line (in the active folder that you want to be working in, i.e., Mdl) type "md Foo" or "mkdir Foo" (i.e., Make directory). This will create a folder called Foo. To delete a folder type "rd Foo" (remove directory). Note, the system will not delete a folder unless it is empty. To delete files in a folder type del fileName. To delete all files in a folder type "del *.*" (be careful here, because it will delete everything in the folder- rarely used).
+   
+4. View a folder.
+     To view the contents and size of items in a folder you can type dir on the command line to see everything in the folder. You can also type 'ls' (list) which will array the files and folders horizontally. 
+
+5. Redirect.
+     A. Another powerful command in DOS is the redirect. For instance, if you want to take what would normally be outputs to the screen and, instead, have the outputs put into a file you can use the '>' symbol. As an example you can save the results of a directory list to a text file. To do this type "ls > files.txt" into a DOS window.
+     
+6. Make and delete a text file.
+     A. At one time it was possible to create text files in DOS from the command line; the process was a bit clunky (if you use the DOS editor). It is recommended that you use a text editor to create or edit a text tile (*.txt). On the command line:  type "notepad yourfile.txt" .. a popup dialoge box should warn you that the system cannot find that file and then it asks if you want to create one. Click on yes. If the file is already present the system will simply open the file in notepad.
+     
+7. If you type help then space before a command in DOS command line a list of command options will scroll in the window.
+
+8. Write a basic repeatable scripts using .bat files
+     A. Simple text files with the extension .bat can be run as batch files. A batch file can execute any number of commands from a DOS box sequentially without having to manually input every character. The commands are read from the text file by line. You can add comments to the file by typing "REM" or ":" at the beginning of a line. Here is an example text from a batch file to make a new folder called "Foo2" then print a list of the files in the current directory:
+
+REM This is a comment and is ignored by DOS
+md Foo2
+ls > files2.txt
+     
+     If you save the above lines to a .txt file then change the extension of the text file to .bat it will become a windows script or batch file. Then you can double click the .bat file to run the commands within the .bat file.
+     
+     B. Writing a line with a just the word "pause" will force the DOS window to stop when it reaches that command and wait for the user to press any enter. Putting pause as the last line of a .bat file will let the user see the results of the DOS commands.
+     
+     C. Another example is running MODFLOW using a batch file. To run MODFLOW type the name of the MODFLOW executable file into the first position on the line then write a space and then type the name of the namefile that is used to activate the MODFLOW run.
+
+mf2005.exe example1.nam
+pause
+     
+9. Running MODFLOW in subfolders. (Not required, but very useful).
+     A. Another method for running MODFLOW from the command line is to keep the input files in a separate folder to create order, and write the output files to a separate folder. In this case from your root (Mdl) folder you could md outputs and then md inputs. You could then copy all the required input files in the inputs folder to the root folder and run the model. Then you can move the result files to a folder called output. For the batch file to work you will need mf2005.exe saved in the root (Mdl) folder. Your DOS batch file for the second example we will discuss might look like this:
+     
+REM This is a DOS batch file used to run MODFLOW 2005. This file copies inputs
+REM from the input directory and stores outputs in the output directory
+REM This file was created on 11.16.20 by Dr. David Arthur Sampson
+Echo on
+cd Inputs
+REM copy everything in the inputs folder into the root (model) folder
+copy *.* ..
+REM Run MODFLOW
+mf2005.exe example2.nam
+REM copy results from the list file into the outputs folder (directory)
+copy *.lst outputs
+
+(For the batch file to work you will need mf2005.exe saved in the root (model) folder.)
