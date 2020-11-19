@@ -62,8 +62,8 @@ Echo on
 cd Inputs
 REM copy everything in the inputs folder into the root (model) folder
 copy *.* ..
+cd ..
 REM Run MODFLOW
-cd ../
 mf2005.exe example2.nam
 REM copy results from the list file into the outputs folder (directory)
 copy *.lst outputs
