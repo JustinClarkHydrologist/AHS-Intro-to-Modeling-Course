@@ -1,8 +1,19 @@
 SUMMARY OF RUNNING COMMAND LINE PROGRAMS IN WINDOWS:
 
-MODFLOW can be run by double clicking the .exe if the .exe file is saved in the folder that you are running MODFLOW (i.e., the same folder as the required input files) then typing the name of the MODFLOW name file and pressing enter. Very few invoke MODFLOW in this way. 
+MODFLOW can be run by double clicking the .exe then typing the name of the MODFLOW name file and pressing enter. 
+This only works if the .exe file is saved in the folder that you are running MODFLOW (i.e., the same folder as the required input files). 
+Very few invoke MODFLOW in this way.
 
-Most modelers use a Command Line input or a Graphical User Inferface (GUI) to run MODFLOW. Running MODFLOW from the Command Line is free and allows the user to see the progress of the model as it is running. Using command line scripts (batch files) are also very useful for running MODFLOW. Batch file scripts (.bat files) serve as a digital record of the MODFLOW simulations (i.e., the specific input files used, the various packages used,etc.) and offer a simple way to rerun MODFLOW (if need be).
+Most modelers use a Command Line input or a Graphical User Inferface (GUI) to run MODFLOW. 
+Running MODFLOW from the Command Line is free and allows the user to see the progress of the model as it is running. 
+Additionally, if the user is familiar with Command Line they can generate Command Line scripts can be very useful for running MODFLOW and being able to easily run it again.
+This document shows how to use Command Line tools and how to generate a Command Line script. These are examples of Command Line shells:
+Shell       |  OS
+Dos         | Windows
+Powershell  | Windows
+Bash        | Linux / Unix
+
+Windows batch file scripts are text files with the ".bat" extension. These files also serve as a digital record of the MODFLOW simulations (i.e., they can contain specific input files used and other pertinent file locations) and offer a simple and reproducible way to run MODFLOW.
 
 Setup:
 Open a new Explorer window (folder). Navigate to the root folder on your drive and create a folder called Mdl. Then open that folder and make a subfolder called "Example1". Open the Example1 folder.
