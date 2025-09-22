@@ -1,10 +1,17 @@
-# Name file for MODFLOW-2005
-LIST               2  Example1.list
-DIS               11  Example1.dis 
-OC                14  Example1.oc 
-LPF               15  Example1.lpf 
-BAS6              13  Example1.bas 
-PCG               27  Example1.pcg 
-CHD               24  Example1.chd 
-WEL               20  Example1.wel 
-DATA              51  Example1.hds REPLACE
+# MODFLOW name file compatible with these versions of MODFLOW:
+# MODFLOW-2005, MODFLOW-NWT, MODFLOW One Water
+#
+# The Name File specifies the names of the input and output files, 
+# associates each file name with a unit number and identifies the packages that will be used in the model
+#
+# The data is read like this:
+#Package    UnitNumber    Filename
+LIST           2           Example1.lst
+DIS           11           Example1.dis 
+OC            14           Example1.oc 
+LPF           15           Example1.lpf 
+BAS6          13           Example1.bas 
+PCG           27           Example1.pcg 
+CHD           24           Example1.chd 
+WEL           20           Example1.wel 
+DATA          51           Example1.hds REPLACE
