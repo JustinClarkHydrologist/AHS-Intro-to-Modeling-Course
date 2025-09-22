@@ -7,3 +7,38 @@ File repository includes:
 3. Text file with helpful links for groundwater modelers.
 
 This repository has a collection of usable groundwater models that are example files for instructors to use to teach groundwater modeling with MODFLOW.
+
+Here is some basic guidance on how MODFLOW files work:
+MODFLOW Files are text files that are used as the input files for a simulation of water moving through porous media.
+
+These files are the basic files that are commonly used for MODFLOW:
+
+--INPUT FILES--
+>Initilization Files
+Name Package -
+
+Basic Package -
+
+Flow Package file - 
+Layer Property Flow Package
+Upstream Weighting Flow Package
+Block Centered Flow Package
+
+Discretization file - 
+
+>Stress Packages
+
+--OUTPUT FILES--
+List file -
+
+Head file - 
+
+Budget file - 
+
+Drawdown file - 
+
+Concentration file - 
+
+
+
+
