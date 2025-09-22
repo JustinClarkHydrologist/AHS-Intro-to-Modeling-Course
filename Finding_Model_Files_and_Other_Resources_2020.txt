@@ -1,5 +1,5 @@
 Published Model Files:
-https://new.azwater.gov/hydrology/groundwater-modeling
+[Arizona Department of Water Resources](https://www.azwater.gov/hydrology-groundwater-modeling)
 
 https://ca.water.usgs.gov/sustainable-groundwater-management/california-groundwater-modeling.html
 
@@ -10,4 +10,5 @@ https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-differe
 https://www.usgs.gov/software/modflow-one-water-hydrologic-flow-model-conjunctive-use-simulation-software-mf-owhm
 
 Other Useful Resources:
+
 https://www.hatarilabs.com/cu-en
