@@ -14,19 +14,34 @@ MODFLOW Files are text files that are used as the input files for a simulation o
 These files are the basic files that are commonly used for MODFLOW:
 
 --INPUT FILES--
->Initilization Files
-Name Package -
+Initilization Files
+>Name Package -
+>
 
-Basic Package -
+>Basic Package -
+>
 
-Flow Package file - 
-Layer Property Flow Package
-Upstream Weighting Flow Package
-Block Centered Flow Package
+>Discretization Package - 
+>
 
-Discretization file - 
+Flow Package files - 
+>Layer Property Flow Package
+>Upstream Weighting Flow Package
+>Block Centered Flow Package
+>
 
->Stress Packages
+Stress Packages
+>Recharge Package
+>
+
+>Stream Flow Package
+>
+
+>Constant Head Package
+>
+
+>Evapotranspiration Package
+>
 
 --OUTPUT FILES--
 List file -
