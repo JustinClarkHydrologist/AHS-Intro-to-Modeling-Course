@@ -12,19 +12,26 @@ Published Model Files:
 MODFLOW Documentation and Download:
 
 USGS MODFLOW 2005 Website:
+
 https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model
 
 USGS MODFLOW one Water Website:
+
 https://www.usgs.gov/software/modflow-one-water-hydrologic-flow-model-conjunctive-use-simulation-software-mf-owhm
 
 GSI MODFLOW USG Website:
+
 https://www.gsienv.com/software/modflow-usg/modflow-usg/
 
 Other Useful Resources:
 
-https://www.hatarilabs.com/cu-en
+Groundwater Modeling Decision Support Initiative (Australia)
 
 https://gmdsi.org/
+
+Hatari Labs (South America)
+
+https://www.hatarilabs.com/cu-en
 
 
 
