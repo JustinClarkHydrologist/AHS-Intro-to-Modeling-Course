@@ -1,4 +1,4 @@
-Published Model Files:
+--- --- Published Model Files --- ---
 
 [Arizona Department of Water Resources Groundwater Modeling Homepage](https://www.azwater.gov/hydrology-groundwater-modeling)
 
@@ -9,7 +9,7 @@ Published Model Files:
 [Texas Water Development Board - Texas Groundwater Availability Models (GAMs)](https://www.twdb.texas.gov/groundwater/models/gam/index.asp)
 
 
-MODFLOW Documentation and Download:
+--- --- MODFLOW Documentation and Download --- ---
 
 USGS MODFLOW 2005 Website:
 
@@ -23,7 +23,7 @@ GSI MODFLOW USG Website:
 
 https://www.gsienv.com/software/modflow-usg/modflow-usg/
 
-Other Useful Resources:
+--- --- Other Useful Resources --- ---
 
 Groundwater Modeling Decision Support Initiative (Australia)
 
@@ -32,6 +32,7 @@ https://gmdsi.org/
 Hatari Labs (South America)
 
 https://www.hatarilabs.com/cu-en
+
 
 
 
