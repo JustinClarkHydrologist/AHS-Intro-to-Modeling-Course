@@ -2,9 +2,10 @@
 This is the page for the data resources that students can use for the Arizona Hydrological Society (AHS) Introduction to Groundwater Modeling Course - Updated for 2025 Course.
 
 File repository includes:
-1. Instructions on using Windows DOS and Command Line Scripts (to be completed before class)
-2. Example MODFLOW files
-3. Text file with helpful links for groundwater modelers.
+1. A file that has instructions that shows users how to use Windows Command Prompt and Command Line Scripts (to be completed before class)
+2. Example MODFLOW files (4 examples in "Examples" directory)
+3. A file with helpful links for groundwater modelers
+4. A quick guide on how MODFLOW works (below)
 
 This repository has a collection of usable groundwater models that are example files for instructors to use to teach groundwater modeling with MODFLOW.
 
