@@ -9,10 +9,11 @@ The file repository includes:
 
 This repository has a collection of usable groundwater models that are example files for instructors to use to teach groundwater modeling with MODFLOW.
 
-Here is some basic guidance on how MODFLOW files work:
-MODFLOW Files are text files that are used as the input files for a simulation of water moving through porous media.
+Here is some basic guidance on how MODFLOW works:
 
-These files are the basic files that are commonly used for MODFLOW:
+MODFLOW is run using at least 5 text files that are used as the input files for a simulation of water moving through porous media.
+
+These files are some of the basic files that are commonly used for MODFLOW:
 
 --INPUT FILES--
 Initialization Files
