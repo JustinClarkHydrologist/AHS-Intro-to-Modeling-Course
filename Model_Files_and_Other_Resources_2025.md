@@ -1,4 +1,4 @@
---- --- Published Model Files --- ---
+--- --- Published Models and Model Files --- ---
 
 [Arizona Department of Water Resources Groundwater Modeling Homepage](https://www.azwater.gov/hydrology-groundwater-modeling)
 
@@ -7,6 +7,8 @@
 [California Department of Water Resources Groundwater Modeling Homepage](https://water.ca.gov/library/modeling-and-analysis)
 
 [Texas Water Development Board - Texas Groundwater Availability Models (GAMs)](https://www.twdb.texas.gov/groundwater/models/gam/index.asp)
+
+[New Mexico Office of the State Engineer (OSE) - Model Reports only, no files](https://www.ose.nm.gov/Hydrology/reports.php#B) 
 
 
 --- --- MODFLOW Documentation and Download --- ---
@@ -32,6 +34,11 @@ https://gmdsi.org/
 Hatari Labs (South America)
 
 https://www.hatarilabs.com/cu-en
+
+PEST - Model Calibration Software
+
+https://pesthomepage.org/
+
 
 
 
