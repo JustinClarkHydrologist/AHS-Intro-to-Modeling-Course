@@ -17,11 +17,9 @@ USGS MODFLOW 2005 Website:
 
 https://www.usgs.gov/software/modflow-2005-usgs-three-dimensional-finite-difference-ground-water-model
 
-
 USGS MODFLOW one Water Website:
 
 https://www.usgs.gov/software/modflow-one-water-hydrologic-flow-model-conjunctive-use-simulation-software-mf-owhm
-
 
 GSI MODFLOW USG Website:
 
@@ -33,15 +31,14 @@ Groundwater Modeling Decision Support Initiative (Australia)
 
 https://gmdsi.org/
 
-
 Hatari Labs (South America)
 
 https://www.hatarilabs.com/cu-en
 
-
 PEST - Model Calibration Software
 
 https://pesthomepage.org/
+
 
 
 
