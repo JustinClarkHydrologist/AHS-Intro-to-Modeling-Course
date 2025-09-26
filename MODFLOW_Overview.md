@@ -3,6 +3,7 @@ MODFLOW Overview & File Structure Guidance Document
 MODFLOW simulates groundwater flow by solving finite-difference or finite-volume equations in a series of 3D model blocks.
 There have been many releases of MODFLOW. Selecting a version of MODFLOW is important.
 These are the Versions of MODFLOW that the class will cover:
+
 MODFLOW-USG
 MODFLOW-One Water
 MODFLOW-NWT
