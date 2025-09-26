@@ -2,6 +2,10 @@ These files were generated for use in a introductory level groundwater modeling 
 
 The files in this folder are for MODFLOW Example1 for the 2025 Arizona Hydrological Society (AHS) Introduction to Building and Running Groundwater Models Workshop.
 
+To start the model run just double click on the Windows command-line file "_RunMe_MODFLOW.bat".
+
+The program file for MODFLOW must be in the same folder or in a location that Windows will access through system variables.
+
 The files are the input files for a MODFLOW 2005 Model which can be run in these versions of MODFLOW:
  - MODFLOW-2005
  - MODFLOW-NWT
