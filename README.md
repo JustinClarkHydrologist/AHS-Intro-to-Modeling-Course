@@ -7,7 +7,7 @@ Repository Contents
 | Item                                | Description                                                                                                       |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | `README.md`                         | This file: Github repository overview and usage instructions                                                                        |
-| `Running Command Prompt.md`         | Instructions for using Windows Command Prompt and command-line scripts, students should complete before class     |
+| `Running_Command_Prompt.md`         | Instructions for using Windows Command Prompt and command-line scripts, students should complete before class     |
 | `Examples/`                         | Four example MODFLOW model setups to be used during the workshop                                                  |
 | `Helpful_Links.md`                  | A curated list of external resources, tutorials, software, reference documents                                    |
 | `MODFLOW_Overview.md`               | A short reference showing how MODFLOW works (packages, I/O, workflow)                                             |
