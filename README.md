@@ -21,7 +21,7 @@ As the simulation runs output files are generated.
 The output files contain a log reporting the steps MODFLOW took during the simulation, as well as, 
 other data such as water levels, budgets, and concentrations over time. 
 
-The MODFLOW_Overview.md file will give you some other details on the input and output files commonly used in MODFLOW. 
+The `MODFLOW_Overview.md` file will give you some other details on the input and output files commonly used in MODFLOW. 
 
 As noted above this repository has a collection of usable groundwater models, these also serve as example files for instructors to use to teach groundwater modeling with MODFLOW.
 
