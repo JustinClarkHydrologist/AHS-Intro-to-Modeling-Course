@@ -1,17 +1,25 @@
 MODFLOW Overview & File Structure Guidance Document
 
 MODFLOW simulates groundwater flow by solving finite-difference or finite-volume equations in a series of 3D model blocks.
+
 There have been many releases of MODFLOW. Selecting a version of MODFLOW is important.
+
 These are the Versions of MODFLOW that the class will cover:
 
 MODFLOW-USG
+
 MODFLOW-One Water
+
 MODFLOW-NWT
+
 MODFLOW-6
 
 A typical MODFLOW model includes input files that define the model setup, and output files that record results.
+
 The input and most output files are simple text files that can be opened with any text editor.
+
 Some output files can be generated in binary file format that cannot be read with a text editor.
+
 Methods for reading those files will be covered in the course.
 
  --- Input Files ---
