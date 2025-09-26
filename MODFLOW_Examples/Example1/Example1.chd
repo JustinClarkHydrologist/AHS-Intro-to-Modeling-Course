@@ -2,7 +2,7 @@
 # Updated by Justin Clark, September 2025
 #
         52             # Maximum number of constant-head boundary cells during any Stress Period
-        52         0   # [Number of non-parameter constant-head boundaries read for Stress Period 1][Number of parameter constant-head boundaries read for Stress Period 1]
+        52         0   # Number of constant-head boundary cells for Stress Period 1, Number of parameter constant-head boundary cells for Stress Period 1
          1         1         2   1.5000000E+01   1.5000000E+01  # Top
          1         1         3   1.5000000E+01   1.5000000E+01  # Top
          1         1         4   1.5000000E+01   1.5000000E+01  # Top
