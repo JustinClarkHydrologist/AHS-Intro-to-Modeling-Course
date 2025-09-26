@@ -1,11 +1,12 @@
 # MODFLOW name file compatible with these versions of MODFLOW:
 # MODFLOW-2005, MODFLOW-NWT, MODFLOW One Water
+# Updated by Justin Clark, September 2025
 #
 # The Name File specifies the names of the input and output files, 
 # associates each file name with a unit number and identifies the packages that will be used in the model
 #
 # The data is read like this:
-#Package    UnitNumber    Filename
+#Package    UnitNumber     Filename
 LIST           2           Example1.lst
 DIS           11           Example1.dis 
 OC            14           Example1.oc 
@@ -15,3 +16,4 @@ PCG           27           Example1.pcg
 CHD           24           Example1.chd 
 WEL           20           Example1.wel 
 DATA          51           Example1.hds REPLACE
+
