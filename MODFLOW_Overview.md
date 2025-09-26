@@ -39,15 +39,13 @@ Stress Period / Boundary Condition Packages -	These define external forcing or b
 
 • Stream (STR) - Simulates streams in a model. 
 
-• Streamflow Routing (SFR) - Updated simulation of streams in a model.  The flow in a stream is routed to downstream streams or lakes. 
-
-SFR allows for stream-aquifer interactions, including the simulation of unsaturated flow and more options for computing stream depth and diversions
+• Streamflow Routing (SFR) - Updated simulation of streams in a model. The flow in a stream is routed to downstream streams or lakes. SFR allows for stream-aquifer interactions, including the simulation of unsaturated flow and more options for computing stream depth and diversions
 
 • Well (WEL) - Simulates well pumping or recharge.
 
 • Constant-Head Boundary (CHD) - Simulates the interaction with the groundwater system at with a specified head boundary condition.
 
-• General‐Head Boundary (GHB) - Simulates head-dependent flux boundaries.  In the GHB package the flux is always proportional to the difference in head.
+• General‐Head Boundary (GHB) - Simulates head-dependent flux boundaries. In the GHB package the flux is always proportional to the difference in head.
 
 • Evapotranspiration (EVT) - Simulates evapotranspiration as head-dependent flux out of the model distributed over the top of the model.
 
