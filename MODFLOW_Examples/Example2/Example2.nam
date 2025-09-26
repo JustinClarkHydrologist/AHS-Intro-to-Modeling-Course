@@ -1,0 +1,10 @@
+# Name file for MODFLOW-2005
+LIST               2  Example2.lst
+DIS               11  Example2.dis 
+OC                14  Example2.oc 
+LPF               15  Example2.lpf 
+BAS6              13  Example2.bas 
+PCG               27  Example2.pcg 
+CHD               24  Example2.chd 
+WEL               20  Example2.wel 
+DATA              51  Example2.hds REPLACE
