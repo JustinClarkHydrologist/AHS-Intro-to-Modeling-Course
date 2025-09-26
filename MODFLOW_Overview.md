@@ -1,4 +1,4 @@
-MODFLOW: Overview & File Structure
+MODFLOW Overview & File Structure Guidance Document
 
 MODFLOW simulates groundwater flow by solving finite-difference or finite-volume equations in a series of 3D model blocks.
 There have been many releases of MODFLOW. Selecting a version of MODFLOW is important.
@@ -14,6 +14,7 @@ Some output files can be generated in binary file format that cannot be read wit
 Methods for reading those files will be covered in the course.
 
  --- Input Files ---
+
 Here’s a breakdown of common MODFLOW input file types and their roles. Not all models use all of these; the exact set depends on your packages and model configuration.
 
 Package - File	Purpose / What It Defines
@@ -43,6 +44,7 @@ Other Common Input Packages-
 • Observations, constraints, etc.
 
  --- Output Files ---
+
 These files record the results of the simulation and help you interpret model behavior.
 
 Output File	- Contents / Use
