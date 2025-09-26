@@ -3,7 +3,7 @@ This is the page for the data resources that students can use for the Arizona Hy
 
 The file repository includes:
 1. A file that has instructions showing users how to use Windows Command Prompt and Command Line Scripts (to be completed before class)
-2. Example MODFLOW files (4 examples in "Examples" directory)
+2. 4 folders with example MODFLOW files (in "Examples" directory)
 3. A file with helpful links for groundwater modelers
 4. A quick guide on how MODFLOW works (below)
 
