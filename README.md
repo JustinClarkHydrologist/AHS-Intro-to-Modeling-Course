@@ -1,4 +1,19 @@
 # AHS-Intro-to-Modeling-Course
+
+This repository contains data, example models, and instructional materials for the Arizona Hydrological Society (AHS) Introduction to Building and Running Groundwater Models (2025). It is intended as a resource for students participating in the workshop and others interested in groundwater modeling with MODFLOW.
+
+Repository Contents
+
+| Item                                | Description                                                                                                       |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `README.md`                         | This file: overview and usage instructions                                                                        |
+| `PreCourse_Instructions/`           | Instructions (e.g. using Windows Command Prompt, command-line scripts) that students should complete before class |
+| `Examples/`                         | Four (or more) example MODFLOW model setups to be used during the workshop                                        |
+| `Helpful_Links/`                    | A curated list of external resources, tutorials, software, reference documents                                    |
+| `QuickGuide_MODFLOW.pdf` (or `.md`) | A short reference showing how MODFLOW works (packages, I/O, workflow)                                             |
+
+
+
 This is the page for the data resources that students can use for the Arizona Hydrological Society (AHS) Introduction to Groundwater Modeling Course - Updated for 2025 Course.
 
 The file repository includes:
