@@ -1,0 +1,138 @@
+# Upper left corner: (0, 0)
+# Lower left corner: (0, -500)
+# Upper right corner: (400, 0)
+# Lower right corner: (400, -500)
+# Grid angle (in degrees counterclockwise): 0
+7 23 20 120 DAY METER 0. 0. 0. PRINTCOORD CORNERCOORD LLCOODRINATE  # NLAY NROW NCOL NPER ITMUNI LENUNI {XFIRSTCORD YFIRSTCORD GRIDROTATION {"PRINTCOORD"}} 
+NO_LAYCBD                                     # LAYCBD(NLAY) or keyword "NO_LAYCBD"
+CONSTANT 500                                  # DELR  -> U1DREL
+CONSTANT 500                                  # DELC
+SURFACE_ELEVATION OPEN/CLOSE ./Data_Model_Arrays/gse.in  # Define ground surface elevation. File opened with generic_input.
+OPEN/CLOSE ./Data_Model_Arrays/gse.in 1 (FREE) -1        # TOPLay1 -> U2DREL
+CONSTANT 205    # BOTLay1
+CONSTANT 200    # BOTLay2
+CONSTANT 140    # BOTLay3
+CONSTANT 125    # BOTLay4
+CONSTANT 65     # BOTLay5
+CONSTANT 60     # BOTLay6
+CONSTANT 0      # BOTLay7
+  31.   -2  1.  TR  15  16 STARTDATE 1/1/2000 #  Jan - 2000  to  FEB 2000
+  29.   -2  1.  TR  15  14         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2000  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2001  to  FEB 2001
+  28.   -2  1.  TR  15  13         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2001  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2002  to  FEB 2002
+  28.   -2  1.  TR  15  13         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2002  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2003  to  FEB 2003
+  28.   -2  1.  TR  15  13         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2003  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2004  to  FEB 2004
+  29.   -2  1.  TR  15  14         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2004  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2005  to  FEB 2005
+  28.   -2  1.  TR  15  13         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2005  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2006  to  FEB 2006
+  28.   -2  1.  TR  15  13         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2006  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2007  to  FEB 2007
+  28.   -2  1.  TR  15  13         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2007  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2008  to  FEB 2008
+  29.   -2  1.  TR  15  14         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2008  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec    
+  31.   -2  1.  TR  15  16         #  Jan - 2009  to  FEB 2009
+  28.   -2  1.  TR  15  13         #  Feb    
+  31.   -2  1.  TR  15  16         #  Mar    
+  30.   -2  1.  TR  15  15         #  Apr    
+  31.   -2  1.  TR  15  16         #  May    
+  30.   -2  1.  TR  15  15         #  Jun    
+  31.   -2  1.  TR  15  16         #  Jul - 2009  
+  31.   -2  1.  TR  15  16         #  Aug    
+  30.   -2  1.  TR  15  15         #  Sep    
+  31.   -2  1.  TR  15  16         #  Oct    
+  30.   -2  1.  TR  15  15         #  Nov    
+  31.   -2  1.  TR  15  16         #  Dec - 2009  to JAN - 2010

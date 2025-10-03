@@ -1,0 +1,6 @@
+1 -0.15   -0.3   -7.925 -80      # Vegetable_Row_Crop
+2 -0.1125 -0.25  -7.375 -97.5	 # Orchard
+3 -0.005  -0.115 -11.5  -160	 # Winter_Grain
+4 -0.15   -0.3   -7.5   -80	 # Urban_Lawn_Graden
+5 -0.1    -0.25  -5     -80	 # Native_Vegetation
+6  0.2    -0.2   -15    -100	 # Riparian

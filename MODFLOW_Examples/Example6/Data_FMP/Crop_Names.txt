@@ -1,0 +1,6 @@
+1   Vegetable_Row_Crop
+2   Orchard
+3   Winter_Grain
+4   Urban_Lawn_Graden
+5   Native_Vegetation
+6   Riparian

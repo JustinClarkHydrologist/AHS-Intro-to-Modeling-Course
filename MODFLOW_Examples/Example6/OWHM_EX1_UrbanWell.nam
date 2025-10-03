@@ -1,0 +1,46 @@
+#Package    Unit  File
+LPF             9 OWHM_Examples.lpf
+BAS            10 OWHM_Examples.bas
+DIS            11 OWHM_Examples.dis
+OC             39 OWHM_Examples.oc  # The output control is specified instead with BAS options instead
+GHB            15 OWHM_ExamplesNew.ghb
+FMP            16 OWHM_Examples_SFR_MNW_NRD_SWAllot_UZF_SUB.fmp
+SFR            17 OWHM_Examples.sfr
+MNW2           18 OWHM_EX1_UrbanWell.mnw2
+UZF            19 OWHM_Examples.uzf
+HYD            22  OWHM_Examples.hyd
+SUB            23  OWHM_ExamplesNEW.sub
+#
+#Solver
+PCG         14  OWHM_Examples.pcg
+#
+#FMP Input Files
+DATA        80  ./Data_FMP/NRDFAC_New.in
+#
+#Output
+LIST             7    ./Output/OWHM_Examples_UrbanWell.lst
+WARN         12345    ./Output/OWHM_Examples_OneWater_Warning.txt WRITE BUFFER 0
+DATA            69    ./Output/Head_save_UrbanWell.fhd		  REPLACE
+DATA(BINARY)    70    ./Output/OWHM_EX1_UrbanWell.cbc		  REPLACE
+DATA(BINARY)    71    ./Output/OWHM_EX1_HYD_UrbanWell.sav	  REPLACE
+DATA            81    ./Output/SFR_Out_UrbanWell.txt		  REPLACE
+DATA(BINARY)    73    ./Output/Sub_save_UrbanWell.out             REPLACE
+DATA            82    ./Output/SFRDB_UrbanWell.txt                REPLACE
+#
+#UZF Output files
+DATA            62    ./Output/UZF_ROW__2_COL__2_Output.opt1		REPLACE
+DATA            63    ./Output/UZF_ROW__3_COL__3_Output.opt2		REPLACE
+DATA            64    ./Output/UZF_ROW__4_COL__4_Output.opt3		REPLACE
+DATA            65    ./Output/UZF_ROW__5_COL__4_Output.opt2		REPLACE
+DATA            66    ./Output/UZF_ROW_10_COL_20_Output.opt1		REPLACE
+DATA            67    ./Output/UZF_ROW_10_COL_20_Output.opt2		REPLACE
+#Tabfiles
+DATA 400 .\Data_Tabfiles\SFR_Inflow\River_In.txt
+DATA 600 .\Data_Tabfiles\SFR_Div\DivCanal1.txt
+DATA 601 .\Data_Tabfiles\SFR_Div\DivCanal2.txt
+DATA 602 .\Data_Tabfiles\SFR_Div\DivFrm1.txt
+DATA 603 .\Data_Tabfiles\SFR_Div\DivFrm2.txt
+DATA 604 .\Data_Tabfiles\SFR_Div\DivFrm3.txt
+DATA 605 .\Data_Tabfiles\SFR_Div\DivFrm4.txt
+DATA 606 .\Data_Tabfiles\SFR_Div\DivFrm6.txt
+DATA 607 .\Data_Tabfiles\SFR_Div\DivScott.txt

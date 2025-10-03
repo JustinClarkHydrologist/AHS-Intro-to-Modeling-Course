@@ -1,0 +1,57 @@
+# One-Water Exercise1_UrbanWell MNW2 Package
+# 
+BEGIN LINEFEED
+./Data_FeedFiles/UrbanFeedFile.txt
+./Data_FeedFiles/MNW_FeedFile.txt
+END
+#
+BEGIN BUDGET_GROUPS
+   Urban_Wel
+   WBS_5_UZF
+   WBS_6_URB
+   BGROUP   #Repeat for as many budget group names that should be calculated as part of the volumetric budget (see Appendix 3 Budget Groups for more details).
+END
+#
+6 70 -1                                       1.    Data: MNWMAX IWL2CB MNWPRNT {OPTION}
+Urban1 -1  Urban_Wel                                                   ** (Part 2a) WELLID NNODES
+SKIN 0 0 1 0                                                  **(Part 2b) LOSSTYPE PUMPLOC Qlimit PPFLAG PUMPCAP
+-1 -1 -1                                                      **(Part 2c) Rw Rskin Kskin
+287.83 0 14 11 0.1 0.35 1.5                                   **(Part 2d) Ztop Zbot ROW COL Rw Rskin Kskin
+MNWWELL1  4     WBS_5_UZF                    2a.   Data: WELLID NNODES
+  SKIN  0 1 0 0                              2b.   Data: LOSSTYPE PUMPLOC Qlimit PPFLAG PUMPCAP
+  -1.  -1.  -1.                              2c.   Data: {Rw Rskin Kskin B C P CWC}  Negative values indicate that properties are read on a node by noe basis
+     1  6   2   0.1  0.35  1.6683            2d-1. Data: LAY ROW COL {Rw Rskin Kskin B C P CWC}
+     3  6   2   0.1  0.35  1.1122
+     5  6   2   0.1  0.35  1.1122
+     7  6   2   0.1  0.35  1.1122
+    205.  0                                  2f.   Data: Hlim QCUT {Qfrcmn Qfrcmx}
+MNWWELL2  4    WBS_5_UZF                     2a.   Data: WELLID NNODES
+  SKIN  0 1 0 0                              2b.   Data: LOSSTYPE PUMPLOC Qlimit PPFLAG PUMPCAP
+  -1.  -1.  -1.                              2c.   Data: {Rw Rskin Kskin B C P CWC}  Negative values indicate that properties are read on a node by noe basis
+     1  8   2   0.1  0.35  1.6683            2d-1. Data: LAY ROW COL {Rw Rskin Kskin B C P CWC}
+     3  8   2   0.1  0.35  1.1122
+     5  8   2   0.1  0.35  1.1122
+     7  8   2   0.1  0.35  1.1122
+    205.  0                                  2f.   Data: Hlim QCUT {Qfrcmn Qfrcmx}
+MNWWELL3  4    WBS_5_UZF                     2a.   Data: WELLID NNODES
+  SKIN  0 1 0 0                              2b.   Data: LOSSTYPE PUMPLOC Qlimit PPFLAG PUMPCAP
+  -1.  -1.  -1.                              2c.   Data: {Rw Rskin Kskin B C P CWC}  Negative values indicate that properties are read on a node by noe basis
+     1  10  2   0.1  0.35  1.6683            2d-1. Data: LAY ROW COL {Rw Rskin Kskin B C P CWC}
+     3  10  2   0.1  0.35  1.1122
+     5  10  2   0.1  0.35  1.1122
+     7  10  2   0.1  0.35  1.1122
+    205.  0                                  2f.   Data: Hlim QCUT {Qfrcmn Qfrcmx}
+MNWWELL4  3    WBS_6_URB                     2a.   Data: WELLID NNODES
+  SKIN  0 1 0 0                              2b.   Data: LOSSTYPE PUMPLOC Qlimit PPFLAG PUMPCAP
+  -1.  -1.  -1.                              2c.   Data: {Rw Rskin Kskin B C P CWC}  Negative values indicate that properties are read on a node by noe basis
+     3  3   19   0.1  0.35  1.1122           2d-1. Data: LAY ROW COL {Rw Rskin Kskin B C P CWC}
+     5  3   19   0.1  0.35  1.1122
+     7  3   19   0.1  0.35  1.1122     
+    205.  0                                  2f.   Data: Hlim QCUT {Qfrcmn Qfrcmx}
+MNWWELL5  3    WBS_6_URB                     2a.   Data: WELLID NNODES
+SKIN  0 1 0 0                                2b.   Data: LOSSTYPE PUMPLOC Qlimit PPFLAG PUMPCAP
+  -1.  -1.  -1.                              2c.   Data: {Rw Rskin Kskin B C P CWC}  Negative values indicate that properties are read on a node by noe basis
+     3  6   17   0.1  0.35  1.1122           2d-1. Data: LAY ROW COL {Rw Rskin Kskin B C P CWC}
+     5  6   17   0.1  0.35  1.1122 
+     7  6   17   0.1  0.35  1.1122 
+    205.  0                                  2f.   Data: Hlim QCUT {Qfrcmn Qfrcmx}

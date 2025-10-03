@@ -1,0 +1,993 @@
+# Transient File Reader
+#  For specifying the FMP Semi-Routed Delivery (SRD) Upper Limit for removing water.
+#
+# Each uncommented line uses the Universal Loader (ULOAD) to read NSFR_DELIV upper limits
+# 
+# In this example, since there is only 1 SRD, 
+#   ULOAD uses an implied internal read (no read directive present, like INTERNAL or OPEN/CLOSE)
+#   To read the input along each line.
+#   This makes it easy to specify the upper limit on each line
+#DiversionNum	1
+#Subregion	1
+#Fraction	1
+7000      # => Year 1  Stress Period 1 
+7000      #            Stress Period 2
+7000      #            Stress Period 3
+7000      #            Stress Period 4
+7000      #            Stress Period 5
+7000      #            Stress Period 6
+7000      #            Stress Period 7
+7000      #            Stress Period 8
+7000      #            Stress Period 9
+7000      #            Stress Period 10
+7000      #            Stress Period 11
+7000      #            Stress Period 12
+5600       #  => Year 2 Stress Period 13
+5600       #            Stress Period 14
+5600       #            Stress Period 15
+5600       #            Stress Period 16
+5600       #            Stress Period 17
+5600       #            Stress Period 18
+5600       #            Stress Period 19
+5600       #            Stress Period 20
+5600       #            Stress Period 21
+5600       #            Stress Period 22
+5600       #            Stress Period 23
+5600       #            Stress Period 24
+7000      # => Year 3  Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+5600       #  => Year 4 Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+7000      # => Year 5  Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+5600       #  => Year 6 Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+7000      # => Year 7  Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+5600       #  => Year 8 Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+7000      # => Year 9  Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+7000      #            Stress Period 
+5600       #  => Year10 Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+5600       #            Stress Period 
+#DiversionNum	1
+#Subregion	2
+#Fraction	1
+3000       # => Year 1  Stress Period 1 
+3000       #            Stress Period 2
+3000       #            Stress Period 3
+3000       #            Stress Period 4
+3000       #            Stress Period 5
+3000       #            Stress Period 6
+3000       #            Stress Period 7
+3000       #            Stress Period 8
+3000       #            Stress Period 9
+3000       #            Stress Period 10
+3000       #            Stress Period 11
+3000       #            Stress Period 12
+2400        #  => Year 2 Stress Period 13
+2400        #            Stress Period 14
+2400        #            Stress Period 15
+2400        #            Stress Period 16
+2400        #            Stress Period 17
+2400        #            Stress Period 18
+2400        #            Stress Period 19
+2400        #            Stress Period 20
+2400        #            Stress Period 21
+2400        #            Stress Period 22
+2400        #            Stress Period 23
+2400        #            Stress Period 24
+3000       # => Year 3  Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+2400        #  => Year 4 Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+3000       # => Year 5  Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+2400        #  => Year 6 Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+3000       # => Year 7  Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+2400        #  => Year 8 Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+3000       # => Year 9  Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+3000       #            Stress Period 
+2400        #  => Year10 Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+2400        #            Stress Period 
+#DiversionNum	1
+#Subregion	3
+#Fraction	1
+5162        # => Year 1  Stress Period 1 
+5162        #            Stress Period 2
+5162        #            Stress Period 3
+5162        #            Stress Period 4
+5162        #            Stress Period 5
+5162        #            Stress Period 6
+5162        #            Stress Period 7
+5162        #            Stress Period 8
+5162        #            Stress Period 9
+5162        #            Stress Period 10
+5162        #            Stress Period 11
+5162        #            Stress Period 12
+4130         #  => Year 2 Stress Period 13
+4130         #            Stress Period 14
+4130         #            Stress Period 15
+4130         #            Stress Period 16
+4130         #            Stress Period 17
+4130         #            Stress Period 18
+4130         #            Stress Period 19
+4130         #            Stress Period 20
+4130         #            Stress Period 21
+4130         #            Stress Period 22
+4130         #            Stress Period 23
+4130         #            Stress Period 24
+5162        # => Year 3  Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+4130         #  => Year 4 Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+5162        # => Year 5  Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+4130         #  => Year 6 Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+5162        # => Year 7  Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+4130         #  => Year 8 Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+5162        # => Year 9  Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+5162        #            Stress Period 
+4130         #  => Year10 Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+4130         #            Stress Period 
+#DiversionNum	1
+#Subregion	4
+#Fraction	1
+4839         # => Year 1  Stress Period 1 
+4839         #            Stress Period 2
+4839         #            Stress Period 3
+4839         #            Stress Period 4
+4839         #            Stress Period 5
+4839         #            Stress Period 6
+4839         #            Stress Period 7
+4839         #            Stress Period 8
+4839         #            Stress Period 9
+4839         #            Stress Period 10
+4839         #            Stress Period 11
+4839         #            Stress Period 12
+3871          #  => Year 2 Stress Period 13
+3871          #            Stress Period 14
+3871          #            Stress Period 15
+3871          #            Stress Period 16
+3871          #            Stress Period 17
+3871          #            Stress Period 18
+3871          #            Stress Period 19
+3871          #            Stress Period 20
+3871          #            Stress Period 21
+3871          #            Stress Period 22
+3871          #            Stress Period 23
+3871          #            Stress Period 24
+4839         # => Year 3  Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+3871          #  => Year 4 Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+4839         # => Year 5  Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+3871          #  => Year 6 Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+4839         # => Year 7  Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+3871          #  => Year 8 Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+4839         # => Year 9  Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+4839         #            Stress Period 
+3871          #  => Year10 Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+3871          #            Stress Period 
+#DiversionNum	1
+#Subregion	5 UZF_GW Pumping only Farm
+#Fraction	1
+0             # => Year 1  Stress Period 1 
+0             #            Stress Period 2
+0             #            Stress Period 3
+0             #            Stress Period 4
+0             #            Stress Period 5
+0             #            Stress Period 6
+0             #            Stress Period 7
+0             #            Stress Period 8
+0             #            Stress Period 9
+0             #            Stress Period 10
+0             #            Stress Period 11
+0             #            Stress Period 12
+0              #  => Year 2 Stress Period 13
+0              #            Stress Period 14
+0              #            Stress Period 15
+0              #            Stress Period 16
+0              #            Stress Period 17
+0              #            Stress Period 18
+0              #            Stress Period 19
+0              #            Stress Period 20
+0              #            Stress Period 21
+0              #            Stress Period 22
+0              #            Stress Period 23
+0              #            Stress Period 24
+0             # => Year 3  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 4 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 5  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 6 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 7  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 8 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 9  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year10 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+#DiversionNum	1
+#Subregion	6 Urban Area
+#Fraction	1
+1000          # => Year 1  Stress Period 1 
+1000          #            Stress Period 2
+1000          #            Stress Period 3
+1000          #            Stress Period 4
+1000          #            Stress Period 5
+1000          #            Stress Period 6
+1000          #            Stress Period 7
+1000          #            Stress Period 8
+1000          #            Stress Period 9
+1000          #            Stress Period 10
+1000          #            Stress Period 11
+1000          #            Stress Period 12
+1000           #  => Year 2 Stress Period 13
+1000           #            Stress Period 14
+1000           #            Stress Period 15
+1000           #            Stress Period 16
+1000           #            Stress Period 17
+1000           #            Stress Period 18
+1000           #            Stress Period 19
+1000           #            Stress Period 20
+1000           #            Stress Period 21
+1000           #            Stress Period 22
+1000           #            Stress Period 23
+1000           #            Stress Period 24
+1000          # => Year 3  Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000           #  => Year 4 Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000          # => Year 5  Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000           #  => Year 6 Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000          # => Year 7  Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000           #  => Year 8 Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000          # => Year 9  Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000          #            Stress Period 
+1000           #  => Year10 Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+1000           #            Stress Period 
+#DiversionNum	1
+#Subregion	7 Native Vegetation areas
+#Fraction	1
+0             # => Year 1  Stress Period 1 
+0             #            Stress Period 2
+0             #            Stress Period 3
+0             #            Stress Period 4
+0             #            Stress Period 5
+0             #            Stress Period 6
+0             #            Stress Period 7
+0             #            Stress Period 8
+0             #            Stress Period 9
+0             #            Stress Period 10
+0             #            Stress Period 11
+0             #            Stress Period 12
+0              #  => Year 2 Stress Period 13
+0              #            Stress Period 14
+0              #            Stress Period 15
+0              #            Stress Period 16
+0              #            Stress Period 17
+0              #            Stress Period 18
+0              #            Stress Period 19
+0              #            Stress Period 20
+0              #            Stress Period 21
+0              #            Stress Period 22
+0              #            Stress Period 23
+0              #            Stress Period 24
+0             # => Year 3  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 4 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 5  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 6 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 7  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 8 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 9  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year10 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+#DiversionNum	1
+#Subregion	8 Riparian Area
+#Fraction	1
+0             # => Year 1  Stress Period 1 
+0             #            Stress Period 2
+0             #            Stress Period 3
+0             #            Stress Period 4
+0             #            Stress Period 5
+0             #            Stress Period 6
+0             #            Stress Period 7
+0             #            Stress Period 8
+0             #            Stress Period 9
+0             #            Stress Period 10
+0             #            Stress Period 11
+0             #            Stress Period 12
+0              #  => Year 2 Stress Period 13
+0              #            Stress Period 14
+0              #            Stress Period 15
+0              #            Stress Period 16
+0              #            Stress Period 17
+0              #            Stress Period 18
+0              #            Stress Period 19
+0              #            Stress Period 20
+0              #            Stress Period 21
+0              #            Stress Period 22
+0              #            Stress Period 23
+0              #            Stress Period 24
+0             # => Year 3  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 4 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 5  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 6 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 7  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year 8 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0             # => Year 9  Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0             #            Stress Period 
+0              #  => Year10 Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 
+0              #            Stress Period 

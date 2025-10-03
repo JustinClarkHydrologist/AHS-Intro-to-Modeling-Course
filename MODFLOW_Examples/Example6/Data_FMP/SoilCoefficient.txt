@@ -1,0 +1,4 @@
+# SID  Coefficient
+   1   SILT 
+   2   SANDYLOAM
+   3   SILTYCLAY

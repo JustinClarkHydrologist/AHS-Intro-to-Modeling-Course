@@ -1,0 +1,22 @@
+# EACH OF THESE DATE_START AND DATE_END HAVE THE WELL AVAILINE FROM SP 1 to 120
+#
+# WELLID     WBS  LAYER  ROW  COLUMN  QCAP     Date_Start  Date_End  --NaN may be used for Date_Start to indicate Stress Period 1 or for Date_End for end of simulation
+  FWEL_1      1     1     5     6      15000.0  1/1/2000    12/31/2009      
+  FWEL_2      1     1     8     6      15000.0  1           120      
+  FWEL_3      1     1     8     9      15000.0  1/1/2000    NaN      
+  FWEL_4      2     1     5     9      11000.0  4/23/1979   NaN      
+  FWEL_5      2     1     6    10      9000.0  1           1/1/2050      
+  FWEL_6      2     1     7    11      7000.0  1           NaN      
+  FWEL_7      3     1    18     3      9000.0  1           NaN      
+  FWEL_8      3     1    21     3      13000.0  1           NaN      
+  FWEL_9      4     1    18    19      11000.0  1           NaN      
+  FWEL_10     4     1    21    19      15000.0  1           NaN  
+  #
+  # MWN2 LINKED WELLS  
+
+# WELLID     WBS  LAYER  ROW  COLUMN  QCAP     Date_Start  Date_End
+  MNWWELL1    5   MNW     0     0      15000.0  1           NaN       
+  MNWWELL2    5   MNW     0     0      15000.0  1           NaN       
+  MNWWELL3    5   MNW     0     0      15000.0  1           NaN       
+  MNWWELL4    6   MNW     0     0      9000.0  1           NaN       
+  MNWWELL5    6   MNW     0     0     19000.0  1           NaN       
