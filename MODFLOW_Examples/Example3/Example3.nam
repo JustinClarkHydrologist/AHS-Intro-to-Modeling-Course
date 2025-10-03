@@ -1,0 +1,12 @@
+# Name file for MODFLOW-2005
+# Updated by Justin Clark, September 2025
+#
+LIST               2  Example3.lst
+DIS               11  Example3.dis 
+OC                14  Example3.oc 
+LPF               15  Example3.lpf 
+BAS6              13  Example3.bas 
+PCG               27  Example3.pcg 
+CHD               24  Example3.chd 
+WEL               20  Example3.wel 
+DATA              51  Example3.hds REPLACE

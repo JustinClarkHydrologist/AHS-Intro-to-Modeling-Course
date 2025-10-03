@@ -1,0 +1,29 @@
+# OC package for  MODFLOW-2005
+# Updated by Justin Clark, September 2025
+#
+head save format (60f7.1)
+HEAD PRINT FORMAT   0
+HEAD SAVE UNIT    51
+DRAWDOWN PRINT FORMAT   0
+COMPACT BUDGET AUX
+
+period 1 step 1 
+  save head
+period 2 step 7 
+  save head
+period 3 step 7 
+  save head
+period 4 step 7 
+  save head
+period 5 step 7 
+  save head
+period 6 step 7 
+  save head
+period 7 step 7 
+  save head
+period 8 step 7 
+  save head
+period 9 step 7 
+  save head
+period 10 step 7 
+  save head
