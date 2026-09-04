@@ -27,13 +27,13 @@ The original Windows batch file scripts are text files with the ".bat" extension
 Open a new Explorer window (folder). Navigate to the root folder on your drive and create a folder called Mdl. Then open that folder and make a subfolder called "Example1". This is the example of where I set up the folder:
 C:\Mdl
 
-After you create the "Example1 folder open the folder. Next you will open a Command Prompt instance and run through a few exercises:
+After you create the "Example1 folder open the folder. Next you will open a Command Prompt instance and run through these exercises:
+
 1. There are many ways to open a Command Prompt (DOS CMD, is used interchangeably) window. Here are three:
      >Side Note 1: DOS is not case sensitive so matching capitalization does not matter
      A. Open a windows folder. Left click in the address bar (run line) located below the title bar. Type "cmd" and press enter. A Windows DOS Command Line window pops up with the current folder as the active directory.
      B. Hold shift and right click in the blank space of the current folder. Choose "Open PowerShell window here" from the dropdown menu. Type "start cmd" and press enter. A Windows DOS Command Line window pops up with the current folder as the active directory.
      C. Click on Windows search icon (or the 'run' menu icon). Type "cmd" or "Command Prompt" and press enter. A Windows DOS Command Line window will pop up. When opening the DOS Command Line using this method the active directory is the root folder for the user (e.g., "C:\Users\myprofile"). The steps to change folder locations are discussed below.
-
 
 2. Basic navigation within a Command Line Window using only the keyboard.
      >Side Note 2: CD is the command for change directory
@@ -44,35 +44,34 @@ After you create the "Example1 folder open the folder. Next you will open a Comm
      B. If you are in the root folder of your drive, to move into the folder that you created type "cd Mdl\Example1" then press enter.
      C. To navigate to any folder in the current drive type the entire path after "cd". To test this type "cd C:\Mdl" and press enter then type "cd C:\Mdl\Example1" to get back to the example folder.
      
-
 3. Make and delete a folder.
-     To make a folder, on the command line (in the active folder that you want to be working in, i.e., Mdl) type "md Foo" or "mkdir Foo" (i.e., Make directory). This will create a folder called Foo. To delete a folder type "rd Foo" (rd means remove directory). Note, the system will not delete a folder unless it is empty or the "/s" option is enabled by typing "rd /s Foo". To delete files in a folder type del fileName.
+     To make a folder, using command line (in the active folder that you want to be working in, i.e., Mdl) type "md Test1" or "mkdir Test1" (md is short for make directory). This will create a folder called Test1. To delete a folder type "rd Foo" (rd means remove directory). Note, the system will not delete a folder unless it is empty or the "/s" option is enabled by typing "rd /s Foo". To delete files in a folder type del fileName.
    
-4. View a contents of a folder.
+4. View a contents of a folder. 
      To view the contents and size of items in a folder you can type the command "dir" on the command line to see everything in the folder. You can also type "ls" (list) which will array the files and folders horizontally. 
 
-5. Redirect.
-     A. Another powerful command in DOS is the redirect. For instance, if you want to take what would normally be outputs to the screen and, instead, have the outputs put into a file you can use the '>' symbol. As an example you can save the results of a directory list to a text file. To do this type "ls > files.txt" into the command prompt window.
+5. Test the redirect command. 
+     Another powerful command in DOS is the redirect. For instance, if you want to take what would normally be outputs to the screen and, instead, have the outputs put into a file you can use the '>' symbol. As an example you can save the results of a directory list to a text file. To do this type "ls > files.txt" into the command prompt window.
      
 6. Make and delete a text file.
-     A. At one time it was possible to create text files in DOS from the command line; the process was a bit clunky (if you use the DOS editor). It is recommended that you use a text editor to create or edit a text tile (*.txt). On the command line:  type "notepad yourfile.txt" .. a popup dialoge box should warn you that the system cannot find that file and then it asks if you want to create one. Click on yes. If the file is already present the system will simply open the file in notepad.
+     At one time it was possible to create text files in DOS from the command line; the process was a bit clunky (if you use the DOS editor). It is recommended that you use a text editor to create or edit a text tile (*.txt). On the command line:  type "notepad yourfile.txt" .. a popup dialoge box should warn you that the system cannot find that file and then it asks if you want to create one. Click on yes. If the file is already present the system will simply open the file in notepad.
      
-7. If you type help then space before a command in DOS command line a list of command options will scroll in the window.
+7. If you type help then space before a command in DOS command line a list of command options will scroll in the window. Try exploring the command ls by typing "help ls" in the DOS command line.
 
 8. Write a basic repeatable scripts using .bat files. Follow these steps:
-     A. Simple text files with the extension .bat can be run as batch files. A batch file can execute any number of commands from a DOS box sequentially without having to manually input every character. The commands are read from the text file by line. You can add comments to the file by typing "REM" or ":" at the beginning of a line. Here is an example text from a batch file to make a new folder called "Foo2" then print a list of the files in the current directory:
+     A. Simple text files with the extension .bat can be run as batch files. A batch file can execute any number of commands from Command Prompt sequentially without having to manually input every character. The commands are read from the text file by line. You can add comments to the file by typing "REM" or ":" at the beginning of a line. Here is an example text from a batch file to make a new folder called "Test1" then print a list of the files in the current directory:
 
 REM This is a comment and is ignored by DOS
-md Foo2
-ls > files2.txt
+md Test1
+ls > files.txt
      
-     If you save the above lines to a .txt file then change the extension of the text file to .bat it will become a windows script or batch file. Then you can double click the .bat file to run the commands within the .bat file.
+     If you save the above lines to a .txt file then change the extension of the text file to .bat it will become a windows script or batch file. Then you can double click the .bat file to run the commands within the .bat file. If it is successful a new folder called "Test1" and a new file called "files.txt".
      
-     B. Writing a line with a just the word "pause" will force the DOS window to stop when it reaches that command and wait for the user to press any enter. Putting "pause" as the last line of a .bat file will let the user see the results of the DOS commands. Test that by updating the .bat file and adding a new line at the end with the word "pause", then double click the file to re-generate the folder Foo2 and the file files2.txt
-     
-     C. Another example is running MODFLOW using a batch file. To run MODFLOW type the name of the MODFLOW executable file into the first position on the line then write a space and then type the name of the namefile that is used to activate the MODFLOW run.
+     B. Writing a line with a just the word "pause" will force the DOS window to stop when it reaches that command and wait for the user to press any enter. Putting "pause" as the last line of a .bat file will let the user see the results of the DOS commands. Test that by updating the .bat file and adding a new line at the end with the word "pause", then double click the file to re-generate the folder "Test1" and the file "files.txt".
+
+8. Run MODFLOW using a batch file. To run MODFLOW type the name of the MODFLOW executable file into the first position on the line then write a space and then type the name of the MODFLOW name file that is used to activate the MODFLOW run. This can be done with a Command Prompt window or in a batch file. Create a text file with the following text and then change the extension to ".bat".
 
 mf2005.exe example1.nam
 pause
 
-(For the batch file to work you will need mf2005.exe saved in the root (model) folder or in a location Windows will find through environmental variables.)
+(For the batch file to work you will need mf2005.exe saved in the folder or in a location Windows will find through environmental variables.)
