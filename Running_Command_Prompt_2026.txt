@@ -28,16 +28,19 @@ Open a new Explorer window (folder). Navigate to the root folder on your drive a
 C:\Mdl
 
 After you create the "Example1 folder open the folder. Next you will open a Command Prompt instance and run through a few exercises:
-1. There are many ways to open a Command Prompt (DOS CMD, is used interchangeably)window. Here are three:
-     >Side Note 1: DOS is not case sensititive so matching capitalization does not matter
-     A. Open a windows folder. Left click in the address bar (run line) located below the title bar. Type "cmd" and press enter. A Windows DOS Command Line window (DOS box) pops up with the current folder as the active directory.
+1. There are many ways to open a Command Prompt (DOS CMD, is used interchangeably) window. Here are three:
+     >Side Note 1: DOS is not case sensitive so matching capitalization does not matter
+     A. Open a windows folder. Left click in the address bar (run line) located below the title bar. Type "cmd" and press enter. A Windows DOS Command Line window pops up with the current folder as the active directory.
      B. Hold shift and right click in the blank space of the current folder. Choose "Open PowerShell window here" from the dropdown menu. Type "start cmd" and press enter. A Windows DOS Command Line window pops up with the current folder as the active directory.
-     C. Click on Windows search icon (or the 'run' menu icon). Type "cmd" and press enter. When opening the DOS Command Line (DOS box) using this method the active directory is the root folder for the user (e.g., "C:\Users\myprofile")
+     C. Click on Windows search icon (or the 'run' menu icon). Type "cmd" or "Command Prompt" and press enter. A Windows DOS Command Line window will pop up. When opening the DOS Command Line using this method the active directory is the root folder for the user (e.g., "C:\Users\myprofile"). The steps to change folder locations are discussed below.
 
 
 2. Basic navigation within a Command Line Window using only the keyboard.
      >Side Note 2: CD is the command for change directory
-     A. Being able to move amongst various folders, and to manipulate files, on your hard drive in windows is necessary in  order to run MODFLOW and other DOS based programs. To change from the active directory to the root directory of your current drive type "cd\" (no quotes) on the command line in the Command Prompt Window and press <Enter>.  If you want to move into a folder that is in the currently active directory type "cd" followed by a space and the folder name and press <Enter> (it is assumed that you will press enter after any command that you wish to invoke). If you want to move to a folder that is directly above the current folder in the path (move up one folder) type "cd ..\" into the DOS window.
+     A. Being able to move amongst various folders, and to manipulate files, using DOS Command Prompt is necessary in order to run MODFLOW and other DOS based programs. 
+-To change from the active directory to the root directory of your current drive type "cd\" (no quotes) on the command line in the Command Prompt Window and press <Enter>. 
+-If you want to move into a folder that is in the currently active directory type "cd" followed by a space and the folder name and press <Enter> (it is assumed that you will press enter after any command that you wish to invoke). 
+-If you want to move to a folder that is directly above the current folder in the path (move up one folder) type "cd ..\" into the DOS window.
      B. If you are in the root folder of your drive, to move into the folder that you created type "cd Mdl\Example1" then press enter.
      C. To navigate to any folder in the current drive type the entire path after "cd". To test this type "cd C:\Mdl" and press enter then type "cd C:\Mdl\Example1" to get back to the example folder.
      
@@ -65,28 +68,11 @@ ls > files2.txt
      
      If you save the above lines to a .txt file then change the extension of the text file to .bat it will become a windows script or batch file. Then you can double click the .bat file to run the commands within the .bat file.
      
-     B. Writing a line with a just the word "pause" will force the DOS window to stop when it reaches that command and wait for the user to press any enter. Putting pause as the last line of a .bat file will let the user see the results of the DOS commands.
+     B. Writing a line with a just the word "pause" will force the DOS window to stop when it reaches that command and wait for the user to press any enter. Putting "pause" as the last line of a .bat file will let the user see the results of the DOS commands. Test that by updating the .bat file and adding a new line at the end with the word "pause", then double click the file to re-generate the folder Foo2 and the file files2.txt
      
      C. Another example is running MODFLOW using a batch file. To run MODFLOW type the name of the MODFLOW executable file into the first position on the line then write a space and then type the name of the namefile that is used to activate the MODFLOW run.
 
 mf2005.exe example1.nam
 pause
-     
-9. Running MODFLOW in subfolders. (Not required, but very useful).
-     A. Another method for running MODFLOW from the command line is to keep the input files in a separate folder to create order, and write the output files to a separate folder. In this case from your root (Mdl) folder you could md outputs and then md inputs. You could then copy all the required input files in the inputs folder to the root folder and run the model. Then you can move the result files to a folder called output. For the batch file to work you will need mf2005.exe saved in the root (Mdl) folder. Your DOS batch file for the second example we will discuss might look like this:
-     
-REM This is a DOS batch file used to run MODFLOW 2005. This file copies inputs
-REM from the input directory and stores outputs in the output directory
-REM This file was created on 11.16.20 by Dr. David Arthur Sampson
-Echo on
-cd Inputs
-REM Copying everything in the inputs folder into the root (model) folder
-copy *.* ..
-cd ..
-REM Running MODFLOW
-mf2005.exe example2.nam
-REM Copying results from the list file into the outputs folder (directory)
-copy *.lst outputs
 
 (For the batch file to work you will need mf2005.exe saved in the root (model) folder or in a location Windows will find through environmental variables.)
-
