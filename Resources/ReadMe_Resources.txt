@@ -1,4 +1,4 @@
-This folde contains files that will be used to learn about MODFLOW. The files are Powerpoint (.pptx), Acrobat files (.pdf) and text files (.txt).
+This folder contains files that will be used to learn about MODFLOW. The primary file types are Powerpoint (.pptx), Acrobat files (.pdf) and text files (.txt).
 
 The current files are added in preparation for the 2026 groundwater modeling course.
 
