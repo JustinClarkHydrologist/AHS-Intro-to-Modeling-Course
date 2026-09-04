@@ -6,5 +6,5 @@ echo Starting Model
 mf2005.exe example1.nam
 pause
 
-:MODFLOW-NWT.exe example1.nam
-:mf-owhm.exe example1.nam
+REM MODFLOW-NWT.exe example1.nam
+REM mf-owhm.exe example1.nam
