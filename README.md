@@ -6,14 +6,14 @@ This repository contains data, example models, and instructional materials for t
 
 Repository Contents
 
-| Item                                | Description                                                                                                       |
-| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `README.md`                         | This file: Github repository overview and usage instructions                                                      |
-| `Running_Command_Prompt.md`         | Instructions for using Windows Command Prompt and command-line scripts, students should complete before class     |
-| `Examples/`                         | Four example MODFLOW model setups to be used during the workshop                                                  |
-| `ProgramFiles/`                     | MODFLOW Program Windows executable files                                                                          |
-| `Helpful_Links.md`                  | A curated list of external resources, tutorials, software, reference documents                                    |
-| `MODFLOW_Overview.md`               | A short reference showing how MODFLOW works (packages, I/O, workflow)                                             |
+| Item                                         | Description                                                                                                       |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `README.md`                                  | This file: Github repository overview and usage instructions                                                      |
+| `Running_Command_Prompt_2026.txt`            | Instructions for using Windows Command Prompt and command-line scripts, students should complete before class     |
+| `Examples/`                                  | Example MODFLOW model files set up to be used during the workshop                                                 |
+| `ProgramFiles/`                              | MODFLOW Program Windows executable files                                                                          |
+| `Model_Files_and_Other_Resources_2026.md`    | A curated list of external resources, tutorials, software, reference documents                                    |
+| `MODFLOW_Overview.md`                        | A short reference showing how MODFLOW works (packages, I/O, workflow)                                             |
 
 Here is some basic guidance on how MODFLOW works:
 
@@ -30,7 +30,6 @@ As the simulation runs output files are generated.
 The output files always contains a log reporting the process MODFLOW took during the simulation. 
 
 Other output files that can be optionally generated include data such as water levels, budgets, and concentrations over time. 
-
 
 The `MODFLOW_Overview.md` file will give you some other details on the input and output files commonly used in MODFLOW. 
 
